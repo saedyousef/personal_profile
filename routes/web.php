@@ -15,3 +15,6 @@
 
 Route::get('/', 'ProfileController@index');
 Route::get('/algo', 'AlgorithmsController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
